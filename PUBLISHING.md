@@ -15,6 +15,12 @@ Path rules inside an issue page (the page lives two folders deep):
 - this week's photos: `img/<name>.jpg`
 - the Past Issues link: `../`
 
+The club link must stay on every issue. The club's public page is:
+
+    https://spectacled-mosquito-c7e.notion.site/Outfitters-Men-s-Club-31eb0e79c9378176ba0dd2f8404c4ca6
+
+It appears three times in an issue page, and copying the template keeps all three: the club name in the masthead "Brought to you by" line (`<a class="club">`), the same line in the footer, and the footer box `<a class="join">Learn more or join the Los Olivos Outfitters Men's Club</a>`. The Past Issues page (`issues/index.html`) has it in its "Brought to you by" line and in the same `join` box; `publish.py` only rewrites the list inside `<nav>`, so those stay put. Before pushing, `grep -c spectacled-mosquito index.html` must print 3 and `grep -c spectacled-mosquito issues/index.html` must print 2.
+
 ## Step by step
 
 1. Make the new issue folder, named for the Friday of the weekend:
@@ -74,6 +80,7 @@ The Outfitters Men's Club Notion page gets a small Valley Weekender section, a c
     This week: [Friday, Oct 30 to Sunday, Nov 1, 2026](.../issues/2026-10-30/)   <- EDIT 1
     Past issues · see them all (links to /issues/)                         (never changes)
     - [Oct 30 to Nov 1, 2026](.../issues/2026-10-30/)                      <- EDIT 2 adds a line above this
+    Learn more or join the Los Olivos Outfitters Men's Club (links to the club page)  (never changes)
     New every Thursday. Brought to you by the Los Olivos Outfitters Men's Club.  (never changes)
 
 The banner and the heading link point at the site root, which is always the newest issue, so they keep working even if a Notion edit fails.
