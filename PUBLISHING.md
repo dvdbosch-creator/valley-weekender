@@ -64,3 +64,41 @@ Path rules inside an issue page (the page lives two folders deep):
 - Pages still shows last week: wait two more minutes, then check `gh api repos/dvdbosch-creator/valley-weekender/pages/builds/latest --jq .status`.
 - To undo a bad issue: `git revert HEAD && git push origin main`. The previous issue comes back as the front page.
 - The Notion banner never needs changing. It points at the site root (always the latest issue) and at `/issues/`, and the banner image `assets/banner.png` has no dates on it.
+
+## Notion section update (once Derek is an Outfitters member)
+
+The Outfitters Men's Club Notion page gets a small Valley Weekender section, a copy of the mockup on Derek's personal page "TEST: Outfitters banner mockup" (https://app.notion.com/p/406f5195cbbf814b8160f678e7e894a0). The section is built so the weekly bot changes exactly two lines and nothing else on the page:
+
+    <banner image>  assets/banner.png, caption links to the site root      (never changes)
+    ### Read this week's Valley Weekender (links to the site root)          (never changes)
+    This week: [Friday, Oct 30 to Sunday, Nov 1, 2026](.../issues/2026-10-30/)   <- EDIT 1
+    Past issues · see them all (links to /issues/)                         (never changes)
+    - [Oct 30 to Nov 1, 2026](.../issues/2026-10-30/)                      <- EDIT 2 adds a line above this
+    New every Thursday. Brought to you by the Los Olivos Outfitters Men's Club.  (never changes)
+
+The banner and the heading link point at the site root, which is always the newest issue, so they keep working even if a Notion edit fails.
+
+Weekly steps, after the live site check in step 7 passes:
+
+1. Fetch the Outfitters page with the Outfitters Notion connector (`user-Notion--outfitters`, `notion-fetch`) and confirm the "This week:" line and the first "Past issues" bullet are there exactly as written last week. If they are not, stop and report; do not rewrite the page.
+
+2. Make ONE `notion-update-page` call with `command: "update_content"` and two `content_updates` (example for the Nov 6 issue, where last week was Oct 30):
+
+   Edit 1, the this-week line:
+
+       old_str: This week: [Friday, Oct 30 to Sunday, Nov 1, 2026](https://dvdbosch-creator.github.io/valley-weekender/issues/2026-10-30/)
+       new_str: This week: [Friday, Nov 6 to Sunday, Nov 8, 2026](https://dvdbosch-creator.github.io/valley-weekender/issues/2026-11-06/)
+
+   Edit 2, add one line at the top of the past list (newest first; this week's issue is listed too):
+
+       old_str: - [Oct 30 to Nov 1, 2026](https://dvdbosch-creator.github.io/valley-weekender/issues/2026-10-30/)
+       new_str: - [Nov 6 to Nov 8, 2026](https://dvdbosch-creator.github.io/valley-weekender/issues/2026-11-06/)
+                - [Oct 30 to Nov 1, 2026](https://dvdbosch-creator.github.io/valley-weekender/issues/2026-10-30/)
+
+   (In the actual call new_str is the two bullet lines joined by a newline, no leading spaces.) Never use `replace_content` or `allow_deleting_content` on the Outfitters page. Text strings come from `issues/issues.json` (`title` for the this-week line; a short "Mon D to Mon D, YYYY" form for the bullet).
+
+3. Check the call result for warnings. A warning means an old_str did not match; fetch the page, report what changed, and do not retry with a broader edit.
+
+4. Undo: run the same call with old_str and new_str swapped.
+
+The list will grow by one line a week. After about 12 bullets, the bot may remove the oldest bullet with one more targeted edit (old_str = that bullet plus its leading newline, new_str empty); the full archive always lives at /issues/.
