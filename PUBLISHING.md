@@ -109,3 +109,6 @@ Weekly steps, after the live site check in step 7 passes:
 4. Undo: run the same call with old_str and new_str swapped.
 
 The list will grow by one line a week. After about 12 bullets, the bot may remove the oldest bullet with one more targeted edit (old_str = that bullet plus its leading newline, new_str empty); the full archive always lives at /issues/.
+
+## Reader-facing rule (Derek, 2026-10-31)
+- Never mention time conflicts or source disagreements in the public issue. Use the venue's own most specific listing, or omit the time and point to the official link.
