@@ -21,6 +21,10 @@ The club link must stay on every issue. The club's public page is:
 
 It appears three times in an issue page, and copying the template keeps all three: the club name in the masthead "Brought to you by" line (`<a class="club">`), the same line in the footer, and the footer box `<a class="join">Learn more or join the Los Olivos Outfitters Men's Club</a>`. The Past Issues page (`issues/index.html`) has it in its "Brought to you by" line and in the same `join` box; `publish.py` only rewrites the list inside `<nav>`, so those stay put. Before pushing, `grep -c spectacled-mosquito index.html` must print 3 and `grep -c spectacled-mosquito issues/index.html` must print 2.
 
+## Newsletter sign-up block (required)
+
+Every issue must include the `<section class="subscribe" id="subscribe">` block (Substack embed from https://thevalleyweekender.substack.com/embed, the fallback link, and the free, every Thursday, unsubscribe anytime line), placed just before the landscape image and footer. Copying the template keeps it; do not remove it. Before pushing, `grep -c thevalleyweekender.substack.com/embed index.html` must print 1.
+
 ## Step by step
 
 1. Make the new issue folder, named for the Friday of the weekend:
