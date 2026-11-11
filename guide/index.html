@@ -257,14 +257,6 @@ a.src,a.srcl{color:inherit;text-decoration:underline;text-decoration-color:rgba(
 .guide .mast h1 em{font-size:24px}
 .guide .brought a.club{white-space:normal;max-width:20em;letter-spacing:.08em;line-height:1.45}
 .byline{margin-top:12px;font-family:Fraunces,serif;font-style:italic;font-size:16.5px;color:var(--oak);text-wrap:balance}
-.ddstrip{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 12px;margin:16px 0 0;padding:0 0 8px;border-bottom:2px solid var(--oak);text-align:left}
-.ddstrip .brand{display:flex;align-items:center;gap:8px;min-width:0}
-.ddstrip .lab{font-family:Inter,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--oak);white-space:nowrap}
-.ddstrip .mark{display:block;height:15px;width:auto;background:#111}
-.ddstrip .line{font-family:Fraunces,serif;font-style:italic;font-size:13.5px;line-height:1.2;color:var(--ink)}
-.ddstrip .links{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}
-.ddstrip a{font-family:Inter,sans-serif;font-size:12px;color:var(--oak);text-decoration:underline;text-underline-offset:2px}
-.ddstrip a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .subscribe p a{color:var(--oak)}
 .jump{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:16px 22px 6px}
 .jump a{font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--oak);text-decoration:none;border:1px solid var(--gold);border-radius:99px;padding:6px 9px}
@@ -276,6 +268,8 @@ a.src,a.srcl{color:inherit;text-decoration:underline;text-decoration-color:rgba(
 .ph{display:flex;align-items:center;justify-content:center;background:rgba(184,138,62,.2);font-family:Fraunces,serif;font-size:28px;color:var(--oak)}
 .nm{font-family:Fraunces,serif;font-size:18px;font-weight:600;line-height:1.15;display:block}
 .blurb{display:block;font-family:Inter,sans-serif;font-size:13px;line-height:1.4;margin-top:4px}
+.entry a.nm{color:inherit;text-decoration:none}
+.blurb a{color:inherit}
 .cred a{color:inherit}
 .sbwrap{padding-top:8px}
 .sbwrap > .kicker{display:block;text-align:center;margin:8px 0 0}
@@ -285,7 +279,6 @@ a.src,a.srcl{color:inherit;text-decoration:underline;text-decoration-color:rgba(
   .entry .spot{grid-template-columns:86px 1fr;gap:10px}
   .spot img,.ph{width:86px;height:66px}
   .nm{font-size:16.5px}
-  .ddstrip .line{flex-basis:100%}
 }
 </style></head>
 <body>
@@ -297,14 +290,16 @@ a.src,a.srcl{color:inherit;text-decoration:underline;text-decoration-color:rgba(
   <h1><em>Santa Ynez Area</em>Things to Do</h1>
   <div class="dates">The valley, and on into Santa Barbara</div>
   <p class="byline">List by Sean Phillip, Los Olivos Outfitters Men's Club</p>
-  <div class="ddstrip">
-    <span class="brand"><span class="lab">Brought to you by</span><img class="mark" src="img/dd-logo.jpg" alt="Destination Drivers" width="781" height="64"></span>
-    <span class="line">Sean Phillip&#x27;s wine tours and designated drivers</span>
-    <span class="links"><a href="https://destinationdrivers.com/destinations/santa-barbara/" target="_blank" rel="noopener">destinationdrivers.com</a><a href="tel:+18338687733">833.868.7733</a></span>
-  </div>
   <div class="orn"><i></i><svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 0 L8.6 5.4 L14 7 L8.6 8.6 L7 14 L5.4 8.6 L0 7 L5.4 5.4Z" fill="currentColor"/></svg><i></i></div>
   <p style="margin-top:14px;font-family:Fraunces,serif;font-size:16px;line-height:1.45;color:var(--soft)">A standing list for visitors. Last looked over in November 2026. Hours change, so use the link and check before you go.</p>
 </header>
+<section class="block eve" id="brought">
+<div class="divo"><i></i><s></s><i></i></div>
+<div class="head"><h2>Brought to you by</h2></div>
+<div class="entry" id="destination">
+<div class="spot"><a href="https://destinationdrivers.com/destinations/santa-barbara/" target="_blank" rel="noopener"><img src="img/dd.jpg" alt="Destination Drivers" width="800" height="533" loading="lazy" decoding="async"></a><span class="txt"><a class="nm" href="https://destinationdrivers.com/destinations/santa-barbara/" target="_blank" rel="noopener">Destination Drivers<span class="go" aria-hidden="true">&#8599;</span></a><span class="blurb">Sean Phillip&#x27;s wine tours and designated drivers. <a href="tel:+18338687733">833.868.7733</a></span></span></div>
+</div>
+</section>
 <nav class="jump" aria-label="Areas"><a href="#solvang">Solvang</a><a href="#buellton">Buellton</a><a href="#losalamos">Los Alamos</a><a href="#lompoc">Lompoc</a><a href="#losolivos">Los Olivos</a><a href="#santaynez">Santa Ynez</a><a href="#toward">Toward Santa Barbara</a><a href="#santa-barbara">Santa Barbara</a></nav>
 <section class="block eve" id="solvang">
 <div class="divo"><i></i><s></s><i></i></div>
