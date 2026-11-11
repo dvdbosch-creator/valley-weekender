@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Santa Ynez Area Things to Do</title>
+<style>
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 300 900;
+  font-display: block;
+  src: url(../assets/fonts/fraunces-italic-latin-ext-6cc8f6.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 300 900;
+  font-display: block;
+  src: url(../assets/fonts/fraunces-italic-latin-feced2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: block;
+  src: url(../assets/fonts/fraunces-normal-latin-ext-796716.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: block;
+  src: url(../assets/fonts/fraunces-normal-latin-39ce20.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../assets/fonts/inter-normal-latin-ext-395290.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../assets/fonts/inter-normal-latin-567244.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url(../assets/fonts/inter-normal-latin-ext-395290.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url(../assets/fonts/inter-normal-latin-567244.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src: url(../assets/fonts/inter-normal-latin-ext-395290.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src: url(../assets/fonts/inter-normal-latin-567244.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url(../assets/fonts/inter-normal-latin-ext-395290.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url(../assets/fonts/inter-normal-latin-567244.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root{
+  --paper:#F7F1E6; --cream:#EFE5D3; --ink:#2A221B; --soft:#6E5F50; --oak:#7A5533;
+  --sage:#6F7F5F; --sage-l:#DDE2D0; --terra:#B8592F; --terra-l:#F1DCCD; --gold:#B88A3E;
+  --night:#2E2630; --night2:#3B3140; --rule:#D9CCB6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;width:540px;-webkit-font-smoothing:antialiased}
+.serif{font-family:Fraunces,Georgia,serif}
+.wrap{padding:0 32px}
+.kicker{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--soft)}
+
+/* masthead */
+.mast{padding:40px 32px 26px;text-align:center;border-bottom:1px solid var(--rule)}
+.mast .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.mast h1{font-family:Fraunces,serif;font-weight:800;font-size:66px;line-height:.9;letter-spacing:-.02em;font-variation-settings:"opsz" 144}
+.mast h1 em{font-style:italic;font-weight:400;color:var(--terra);display:block;font-size:30px;letter-spacing:0;margin-bottom:6px}
+.mast .dates{margin-top:18px;font-family:Fraunces,serif;font-size:19px;font-style:italic;color:var(--oak)}
+.mast .dates b{font-style:normal;font-weight:600;color:var(--ink)}
+.orn{display:flex;align-items:center;gap:12px;justify-content:center;margin-top:16px;color:var(--gold)}
+.orn i{display:block;height:1px;width:70px;background:var(--gold)}
+
+/* weather */
+.wx{display:grid;grid-template-columns:auto 1fr 1fr 1fr;align-items:center;gap:0;padding:14px 32px;background:var(--cream);border-bottom:1px solid var(--rule)}
+.wx .lab{font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--sage);padding-right:16px;line-height:1.3}
+.wx .d{display:flex;align-items:center;gap:8px;padding-left:14px;border-left:1px solid var(--rule)}
+.wx .d svg{flex:none}
+.wx .d b{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.wx .d span{font-size:11.5px;color:var(--soft)}
+
+/* hero */
+.sec-label{display:flex;align-items:center;gap:10px;margin:34px 32px 14px}
+.sec-label .dot{width:8px;height:8px;border-radius:50%;background:var(--terra)}
+.hero{margin:0 32px;position:relative;border-radius:4px;overflow:hidden;background:#111}
+.hero img{display:block;width:100%;height:470px;object-fit:cover;object-position:50% 30%}
+.hero .cap{position:absolute;left:0;right:0;bottom:0;padding:90px 24px 22px;background:linear-gradient(180deg,rgba(20,14,16,0) 0%,rgba(20,14,16,.88) 55%);color:#F7F1E6}
+.hero .when{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#E9C9A5}
+.hero h2{font-family:Fraunces,serif;font-weight:700;font-size:40px;line-height:1;margin:8px 0 10px;letter-spacing:-.01em}
+.hero h2 em{font-weight:300;font-style:italic}
+.hero p{font-size:13.5px;line-height:1.5;color:#EDE3D4;max-width:430px}
+.hero .meta{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.chip{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:2px}
+.chip.fam{background:var(--sage-l);color:#3F4C33}
+.chip.lt{background:rgba(247,241,230,.16);color:#F7F1E6;border:1px solid rgba(247,241,230,.35)}
+.chip.price{background:var(--terra-l);color:#8A3E1C}
+.chip.adult{background:#E6DCEA;color:#4A3352}
+
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 32px 0}
+.card img{display:block;width:100%;height:150px;object-fit:cover;border-radius:3px}
+.card .when{margin-top:12px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--terra)}
+.card h3{font-family:Fraunces,serif;font-size:21px;line-height:1.08;font-weight:700;margin:5px 0 6px}
+.card .where{font-size:11.5px;color:var(--soft);font-style:italic;font-family:Fraunces,serif}
+.card p{font-size:12.5px;line-height:1.45;margin-top:7px}
+.card .meta{margin-top:9px;display:flex;gap:6px;flex-wrap:wrap}
+
+/* sections */
+.block{padding:40px 32px 34px;position:relative}
+.day{margin-top:48px}
+.day .chip.fam{background:#6F7F5F;color:#F7F1E6}
+.plan .chip.fam{background:#6F7F5F;color:#F7F1E6}
+.block .head{display:flex;align-items:flex-end;justify-content:space-between;border-bottom:2px solid currentColor;padding-bottom:10px;margin-bottom:6px}
+.block .head h2{font-family:Fraunces,serif;font-size:32px;font-weight:700;letter-spacing:-.01em;line-height:1;display:flex;align-items:center;gap:12px}
+.block .head .num{font-family:Fraunces,serif;font-style:italic;font-size:14px;opacity:.75}
+.icon{width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.item{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.item:last-child{border-bottom:none}
+.item .t{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;line-height:1.45;padding-top:3px}
+.item .t small{display:block;font-weight:500;letter-spacing:.04em;text-transform:none;font-size:11.5px;opacity:.75;margin-top:2px}
+.item h4{font-family:Fraunces,serif;font-size:19.5px;font-weight:600;line-height:1.15}
+.item .where{font-family:Fraunces,serif;font-style:italic;font-size:12.5px;opacity:.8;margin-top:2px}
+.item p{font-size:12.5px;line-height:1.5;margin-top:6px}
+.item .meta{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.src{font-size:10px;letter-spacing:.04em;opacity:.6}
+
+.day{background:var(--sage-l)} .day .head{color:#3F4C33} .day .t{color:#4D5C3F}
+.eve{background:var(--paper)} .eve .head{color:var(--oak)} .eve .t{color:var(--oak)}
+.hal{background:var(--night);color:#F2E8DA} .hal .head{color:#E8A06F} .hal .item{border-color:#4C4150} .hal .t{color:#E8A06F}
+.hal .item p{color:#E2D7C8}
+.drive{background:var(--paper)} .drive .head{color:var(--sage)}
+.eat{background:var(--terra-l)} .eat .head{color:#8A3E1C}
+.plan{background:var(--cream)} .plan .head{color:var(--ink)} .plan .t{color:var(--terra)}
+
+.drivecard{display:grid;grid-template-columns:1fr;gap:0;margin-top:14px;border:1px solid var(--rule);border-radius:4px;padding:20px 22px;background:#FBF7F0}
+.drivecard .t{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--sage)}
+
+.trail-intro{font-family:Fraunces,serif;font-size:17px;line-height:1.4;margin:14px 0 14px}
+.trail{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.trail div{background:#FBF2EA;border-radius:3px;padding:13px 14px;border-left:3px solid var(--terra)}
+.trail b{display:block;font-family:Fraunces,serif;font-size:16px;font-weight:600}
+.trail i{display:block;font-family:Fraunces,serif;font-size:13px;color:#8A3E1C;margin-top:2px}
+.trail span{display:block;font-size:10.5px;color:var(--soft);margin-top:5px}
+
+.elf{width:100%;height:120px;object-fit:cover;border-radius:3px;margin:16px 0 4px;display:block}
+.note{margin:0 32px;padding:18px 0 0;font-size:11.5px;color:var(--soft);line-height:1.5;text-align:center}
+.foot{padding:18px 32px 48px;text-align:center}
+.foot .name{font-family:Fraunces,serif;font-size:24px;font-weight:700}
+.foot .name em{font-weight:400;color:var(--terra)}
+.foot p{font-size:11px;color:var(--soft);margin-top:8px;line-height:1.55}
+
+body{background-color:var(--paper);background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .45  0 0 0 0 .33  0 0 0 0 .2  0 0 0 .07 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.block,.wx{background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .45  0 0 0 0 .33  0 0 0 0 .2  0 0 0 .05 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.eve,.drive{background-color:transparent!important}
+.crest{display:block;width:118px;height:118px;margin:0 auto 12px;mix-blend-mode:multiply}
+.brought{font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--oak);margin-bottom:22px}
+.brought b{font-weight:700;color:var(--ink)}
+.divo{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 auto 22px;opacity:.55}
+.divo i{display:block;height:1px;width:90px;background:currentColor}
+.divo s{display:block;width:6px;height:6px;background:currentColor;transform:rotate(45deg)}
+.land{display:block;width:100%;height:auto;mix-blend-mode:multiply;opacity:.8;margin-top:24px!important;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 88%,transparent 100%),linear-gradient(180deg,transparent 0,#000 18%,#000 82%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect;margin-top:6px}
+.foot .mini{width:58px;height:58px;mix-blend-mode:multiply;display:block;margin:0 auto 10px}
+.foot .brought{margin:8px 0 0}
+
+.brought a.club{display:table;margin:5px auto 0;white-space:nowrap;letter-spacing:.14em;color:inherit;text-decoration:none;border-bottom:1px dotted rgba(122,85,51,.6);padding-bottom:2px}
+.brought a.club::after{content:"\2197";margin-left:.35em;letter-spacing:0;color:var(--terra);font-weight:700}
+.brought a.club b{font-weight:700;color:var(--ink)}
+.join{display:block;margin:16px auto 0;max-width:330px;padding:11px 16px;border:1px solid var(--gold);border-radius:4px;font-family:Fraunces,serif;font-style:italic;font-size:15px;line-height:1.35;color:var(--ink);text-decoration:none}
+.join b{font-style:normal;font-weight:600}
+.join span{color:var(--terra);font-style:normal}
+/* web edition */
+html{background:#E6DAC5}
+body{width:auto!important;background:none!important;background-image:none!important}
+.sheet{max-width:540px;margin:0 auto;background-color:var(--paper);background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .45  0 0 0 0 .33  0 0 0 0 .2  0 0 0 .07 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");overflow:hidden}
+@media (min-width:700px){.sheet{margin:40px auto;box-shadow:0 1px 2px rgba(42,34,27,.12),0 18px 50px rgba(42,34,27,.18);border-radius:2px}}
+a.ev{color:inherit;text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .2s}
+a.ev:hover,a.ev:focus-visible{background-size:100% 1px}
+a.ev:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.go{font-family:Inter,sans-serif;font-style:normal;font-weight:500;font-size:.55em;vertical-align:.45em;margin-left:.2em;opacity:.5}
+.hero a.ev .go{display:none}
+.hero a.ev::after{content:"";position:absolute;inset:0;z-index:1}
+.hero a.ev:hover{background-size:0 1px}.hero:hover h2{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+a.src,a.srcl{color:inherit;text-decoration:underline;text-decoration-color:rgba(110,95,80,.4);text-underline-offset:2px}
+.archive-link{display:inline-block;margin-top:14px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--terra);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.subscribe{margin:28px 24px 8px;padding:20px 18px 16px;background:var(--cream);border:1px solid var(--rule);border-radius:4px;text-align:center}
+.subscribe h2{font-family:Fraunces,serif;font-size:26px;font-weight:700;line-height:1.05;letter-spacing:-.01em}
+.subscribe p{font-family:Inter,sans-serif;font-size:13px;line-height:1.45;color:var(--soft);margin:6px 0 10px}
+.subscribe iframe{display:block;width:100%;max-width:480px;height:150px;margin:0 auto;border:none;background:transparent}
+.subscribe .alt{font-family:Fraunces,serif;font-style:italic;font-size:14px;margin:8px 0 0}
+.subscribe .alt a{color:var(--oak);text-underline-offset:2px}
+@media (max-width:480px){
+  .mast{padding:32px 20px 22px}.mast h1{font-size:54px}
+  .wrap,.block,.foot{padding-left:20px;padding-right:20px}
+  .sec-label{margin-left:20px;margin-right:20px}.hero,.duo{margin-left:20px;margin-right:20px}
+  .hero img{height:400px}.hero h2{font-size:34px}
+  .wx{grid-template-columns:1fr 1fr 1fr;row-gap:10px;padding:14px 20px}.wx .lab{grid-column:1/-1;padding:0}.wx .lab br{display:none}
+  .wx .d:nth-child(2){border-left:none;padding-left:0}
+  .duo{gap:12px}.card h3{font-size:19px}
+  .item{grid-template-columns:78px 1fr;gap:12px}
+  .block .head{flex-wrap:wrap;row-gap:4px}.block .head h2{font-size:27px;white-space:nowrap}.block .head .num{white-space:nowrap}
+  .trail{grid-template-columns:1fr 1fr;gap:10px}
+}
+
+
+.guide .block .head h2{white-space:normal}
+.guide .mast h1{font-size:48px;line-height:.92}
+.guide .mast h1 em{font-size:24px}
+.guide .brought a.club{white-space:normal;max-width:20em;letter-spacing:.08em;line-height:1.45}
+.byline{margin-top:12px;font-family:Fraunces,serif;font-style:italic;font-size:16.5px;color:var(--oak);text-wrap:balance}
+.subscribe p a{color:var(--oak)}
+.jump{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:16px 22px 6px}
+.jump a{font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--oak);text-decoration:none;border:1px solid var(--gold);border-radius:99px;padding:6px 9px}
+.jump a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.sub{font-family:Fraunces,serif;font-style:italic;font-weight:500;font-size:18px;margin:18px 0 4px;color:inherit}
+.entry .spot{display:grid;grid-template-columns:104px 1fr;gap:12px;align-items:center;padding:12px 0;color:inherit;text-decoration:none;border-bottom:1px solid var(--rule)}
+.entry:last-child .spot{border-bottom:none}
+.spot img,.ph{width:104px;height:78px;object-fit:cover;border-radius:3px;display:block}
+.ph{display:flex;align-items:center;justify-content:center;background:rgba(184,138,62,.2);font-family:Fraunces,serif;font-size:28px;color:var(--oak)}
+.nm{font-family:Fraunces,serif;font-size:18px;font-weight:600;line-height:1.15;display:block}
+.blurb{display:block;font-family:Inter,sans-serif;font-size:13px;line-height:1.4;margin-top:4px}
+.cred a{color:inherit}
+.sbwrap{padding-top:8px}
+.sbwrap > .kicker{display:block;text-align:center;margin:8px 0 0}
+.see a{color:var(--oak)}
+@media (max-width:480px){
+  .guide .mast h1{font-size:40px}
+  .entry .spot{grid-template-columns:86px 1fr;gap:10px}
+  .spot img,.ph{width:86px;height:66px}
+  .nm{font-size:16.5px}
+}
+</style></head>
+<body>
+<main class="sheet guide">
+<header class="mast">
+  <div class="top"><span class="kicker">Visitor guide</span><span class="kicker">Once a quarter</span></div>
+  <img class="crest" src="../assets/crest_w.png" alt="Outfitters Men's Club crest">
+  <div class="brought"><a class="club" href="https://app.notion.com/p/31eb0e79c9378176ba0dd2f8404c4ca6" target="_blank" rel="noopener"><b>The Valley Weekender</b>, brought to you by the <b>Outfitters Men's Club</b></a></div>
+  <h1><em>Santa Ynez Area</em>Things to Do</h1>
+  <div class="dates">The valley, and on into Santa Barbara</div>
+  <p class="byline">List by Sean Philip, Los Olivos Outfitters Men's Club</p>
+  <div class="orn"><i></i><svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 0 L8.6 5.4 L14 7 L8.6 8.6 L7 14 L5.4 8.6 L0 7 L5.4 5.4Z" fill="currentColor"/></svg><i></i></div>
+  <p style="margin-top:14px;font-family:Fraunces,serif;font-size:16px;line-height:1.45;color:var(--soft)">A standing list for visitors. Last looked over in November 2026. Hours change, so use the link and check before you go.</p>
+</header>
+<nav class="jump" aria-label="Areas"><a href="#solvang">Solvang</a><a href="#buellton">Buellton</a><a href="#lompoc">Lompoc</a><a href="#losolivos">Los Olivos</a><a href="#santaynez">Santa Ynez</a><a href="#toward">Toward Santa Barbara</a><a href="#santa-barbara">Santa Barbara</a></nav>
+<section class="block eve" id="solvang">
+<div class="divo"><i></i><s></s><i></i></div>
+<div class="head"><h2>Solvang</h2><span class="num">the Danish village</span></div>
+<div class="entry" id="leos">
+<a class="spot" href="https://www.leoscafesolvang.com/" target="_blank" rel="noopener"><img src="img/leos.jpg" alt="Leo&#x27;s Café" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Leo&#x27;s Café<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Breakfast.</span></span></a>
+</div>
+<div class="entry" id="joy">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Caf%C3%A9%20Joy%201623%20Mission%20Drive%20Suite%20H%20Solvang%20CA" target="_blank" rel="noopener"><img src="img/joy.jpg" alt="Coffee" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Café Joy<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Coffee.</span></span></a>
+</div>
+<div class="entry" id="goodseed">
+<a class="spot" href="https://goodseedcoffeeboutique.com/" target="_blank" rel="noopener"><img src="img/goodseed.jpg" alt="Good Seed Coffee Boutique" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Good Seed Coffee Boutique<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Coffee.</span></span></a>
+</div>
+<div class="entry" id="dolce">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Cafe%20Dolce%20475%20First%20Street%20Solvang%20CA" target="_blank" rel="noopener"><img src="img/dolce.jpg" alt="Cafe table" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Cafe Dolce<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A cafe stop in town.</span></span></a>
+</div>
+<div class="entry" id="cailloux">
+<a class="spot" href="https://www.caillouxcheeseshop.com/" target="_blank" rel="noopener"><img src="img/cailloux.jpg" alt="Cailloux Cheese Shop" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Cailloux Cheese Shop<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A cheese shop.</span></span></a>
+</div>
+<div class="entry" id="peasants">
+<a class="spot" href="https://www.peasantsfeast.com/" target="_blank" rel="noopener"><img src="img/peasants.jpg" alt="peasants FEAST" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">peasants FEAST<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Lunch and dinner.</span></span></a>
+</div>
+<div class="entry" id="madvin">
+<a class="spot" href="https://www.thelandsby.com/dining/" target="_blank" rel="noopener"><img src="img/madvin.jpg" alt="Mad &amp; Vin" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Mad &amp; Vin<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Dinner.</span></span></a>
+</div>
+<div class="entry" id="gathering">
+<a class="spot" href="https://gatheringtablesolvang.com/" target="_blank" rel="noopener"><img src="img/gathering.jpg" alt="The Gathering Table" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">The Gathering Table<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Dinner, and weekend brunch.</span></span></a>
+</div>
+<div class="entry" id="analogue">
+<a class="spot" href="https://www.analogueroom.com/" target="_blank" rel="noopener"><img src="img/analogue.jpg" alt="Analogue Room" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Analogue Room<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A wine bar with vinyl.</span></span></a>
+</div>
+<div class="entry" id="chumash">
+<a class="spot" href="https://chumashcasino.com/" target="_blank" rel="noopener"><img src="img/chumash.jpg" alt="Chumash Casino Resort" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Chumash Casino Resort<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The casino.</span></span></a>
+</div>
+<div class="entry" id="theater">
+<a class="spot" href="https://solvangtheaterfest.org/" target="_blank" rel="noopener"><img src="img/theater.jpg" alt="Solvang Festival Theater" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Solvang Festival Theater<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The town theater.</span></span></a>
+</div>
+<div class="entry" id="moto">
+<a class="spot" href="https://www.motosolvang.com/" target="_blank" rel="noopener"><img src="img/moto.jpg" alt="Solvang Vintage Motorcycle Museum" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Solvang Vintage Motorcycle Museum<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Vintage motorcycles.</span></span></a>
+</div>
+<div class="entry" id="ghost">
+<a class="spot" href="https://thehauntghosttours.com/tours/solvang/" target="_blank" rel="noopener"><img src="img/ghost.jpg" alt="Solvang Ghost Tour" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Solvang Ghost Tour<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A ghost tour of town.</span></span></a>
+</div>
+<div class="entry" id="trolley">
+<a class="spot" href="https://solvangtrolley.com/" target="_blank" rel="noopener"><img src="img/trolley.jpg" alt="Solvang Trolley &amp; Carriage Company" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Solvang Trolley &amp; Carriage Company<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Trolley and carriage tours.</span></span></a>
+</div>
+<div class="entry" id="andersen">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Hans%20Christian%20Andersen%20Museum%201680%20Mission%20Drive%20Solvang" target="_blank" rel="noopener"><img src="img/andersen.jpg" alt="Portrait of Hans Christian Andersen" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Hans Christian Andersen Museum<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The museum upstairs at the Book Loft.</span></span></a>
+</div>
+<div class="entry" id="mission">
+<a class="spot" href="https://missionsantaines.org/" target="_blank" rel="noopener"><img src="img/mission.jpg" alt="Old Mission Santa Inés" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Old Mission Santa Inés<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The mission church.</span></span></a>
+</div><h3 class="sub">Recommended wineries</h3><div class="entry" id="almarosa">
+<a class="spot" href="https://www.almarosawinery.com/solvang-tasting-room" target="_blank" rel="noopener"><img src="img/almarosa.jpg" alt="Alma Rosa" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Alma Rosa<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The Solvang tasting room.</span></span></a>
+</div>
+<div class="entry" id="dascomb">
+<a class="spot" href="https://www.dascombcellars.com/" target="_blank" rel="noopener"><img src="img/dascomb.jpg" alt="Dascomb Cellars" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Dascomb Cellars<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A tasting room on Mission Drive.</span></span></a>
+</div>
+</section><section class="block eat" id="buellton">
+<div class="divo"><i></i><s></s><i></i></div>
+<div class="head"><h2>Buellton</h2><span class="num">along the highway</span></div>
+<div class="entry" id="industrial">
+<a class="spot" href="https://industrialeats.com/" target="_blank" rel="noopener"><img src="img/industrial.jpg" alt="Restaurant dining room" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Industrial Eats<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">New American cooking.</span></span></a>
+</div>
+<div class="entry" id="motley">
+<a class="spot" href="https://www.motleycrewmarket.com/" target="_blank" rel="noopener"><img src="img/motley.jpg" alt="Motley Crew Marketplace" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Motley Crew Marketplace<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A butcher shop and farm market.</span></span></a>
+</div>
+<div class="entry" id="tavern">
+<a class="spot" href="https://zaca-creek.com/" target="_blank" rel="noopener"><img src="img/tavern.jpg" alt="The Tavern at Zaca Creek" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">The Tavern at Zaca Creek<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Dinner at the tavern.</span></span></a>
+</div>
+<div class="entry" id="firestone">
+<a class="spot" href="https://www.firestonewalker.com/buellton/" target="_blank" rel="noopener"><img src="img/firestone.jpg" alt="Firestone Walker" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Firestone Walker<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The big brewery taproom in Buellton.</span></span></a>
+</div>
+<div class="entry" id="giorgios">
+<a class="spot" href="https://giorgiosatparkway.com/" target="_blank" rel="noopener"><img src="img/giorgios.jpg" alt="Giorgio&#x27;s at Parkway" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Giorgio&#x27;s at Parkway<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A hidden gem for pizza.</span></span></a>
+</div>
+<div class="entry" id="zacagolf">
+<a class="spot" href="https://discoverbuellton.com/recreation/zaca-creek-golf-course/" target="_blank" rel="noopener"><img src="img/zacagolf.jpg" alt="Zaca Creek Golf Course" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Zaca Creek Golf Course<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Nine holes.</span></span></a>
+</div><h3 class="sub">Recommended wineries</h3><div class="entry" id="tierra">
+<a class="spot" href="https://www.tierrayvino.net/" target="_blank" rel="noopener"><img src="img/tierra.jpg" alt="Wine glasses" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Tierra y Vino<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A tasting room on Industrial Way.</span></span></a>
+</div>
+<div class="entry" id="kenbrown">
+<a class="spot" href="https://www.kenbrownwines.com/" target="_blank" rel="noopener"><img src="img/kenbrown.jpg" alt="Ken Brown Wines" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Ken Brown Wines<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A tasting room on Highway 246.</span></span></a>
+</div>
+<div class="entry" id="section">
+<a class="spot" href="https://www.sectionwines.com/" target="_blank" rel="noopener"><img src="img/section.jpg" alt="Section Wines" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Section Wines<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Appointment required.</span></span></a>
+</div>
+<div class="entry" id="dragonette-b">
+<a class="spot" href="https://dragonettecellars.com/visit-us/" target="_blank" rel="noopener"><img src="img/dragonette-b.jpg" alt="Dragonette Cellars" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Dragonette Cellars<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A private visit at the Buellton winery. Appointment required.</span></span></a>
+</div>
+<div class="entry" id="hitching">
+<a class="spot" href="https://www.hitchingpostwines.com/" target="_blank" rel="noopener"><img src="img/hitching.jpg" alt="Hitching Post Wines" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Hitching Post Wines<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Wines at the Hitching Post.</span></span></a>
+</div>
+<div class="entry" id="kaena">
+<a class="spot" href="https://www.kaenawine.com/" target="_blank" rel="noopener"><img src="img/kaena.jpg" alt="Kaena at The Ranch" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Kaena at The Ranch<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Tasting on Highway 246, between Buellton and Solvang.</span></span></a>
+</div>
+</section><section class="block day" id="lompoc">
+<div class="divo"><i></i><s></s><i></i></div>
+<div class="head"><h2>Lompoc</h2><span class="num">and the Sta. Rita Hills</span></div>
+<div class="entry" id="ghetto">
+<a class="spot" href="https://explorelompoc.com/lompoc-wine-ghetto/" target="_blank" rel="noopener"><img src="img/ghetto.jpg" alt="Lompoc Wine Ghetto" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Lompoc Wine Ghetto<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A cluster of small tasting rooms. Sandhi is the one to ask for.</span></span></a>
+</div>
+<div class="entry" id="capulin">
+<a class="spot" href="https://capulineatsandprovisions.com/" target="_blank" rel="noopener"><img src="img/capulin.jpg" alt="Capulín Eats &amp; Provisions" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Capulín Eats &amp; Provisions<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A place to eat beside the tasting rooms.</span></span></a>
+</div>
+<div class="entry" id="lpgolf">
+<a class="spot" href="https://lapurisimagolf.com/" target="_blank" rel="noopener"><img src="img/lpgolf.jpg" alt="La Purisima Golf Course" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">La Purisima Golf Course<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Golf.</span></span></a>
+</div>
+<div class="entry" id="lpmission">
+<a class="spot" href="https://www.parks.ca.gov/?page_id=598" target="_blank" rel="noopener"><img src="img/lpmission.jpg" alt="La Purísima Mission State Historic Park" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">La Purísima Mission State Historic Park<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The mission.</span></span></a></div><h3 class="sub">Recommended wineries</h3><div class="entry" id="sandhi">
+<a class="spot" href="https://sandhiwines.com/" target="_blank" rel="noopener"><img src="img/sandhi.jpg" alt="Sandhi" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Sandhi<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">In the Wine Ghetto.</span></span></a>
+</div>
+<div class="entry" id="sanford">
+<a class="spot" href="https://www.sanfordwinery.com/" target="_blank" rel="noopener"><img src="img/sanford.jpg" alt="Sanford Winery" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Sanford Winery<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">About a 10 minute drive from town. They taste by appointment.</span></span></a>
+</div>
+<div class="entry" id="spear">
+<a class="spot" href="https://www.spearwinery.com/" target="_blank" rel="noopener"><img src="img/spear.jpg" alt="Spear Vineyards &amp; Winery" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Spear Vineyards &amp; Winery<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A vineyard tasting in the Sta. Rita Hills.</span></span></a>
+</div>
+</section><section class="block plan" id="losolivos">
+<div class="divo"><i></i><s></s><i></i></div>
+<div class="head"><h2>Los Olivos</h2><span class="num">a walkable town</span></div>
+<div class="entry" id="leftys">
+<a class="spot" href="https://www.leftyscoffeeco.com/" target="_blank" rel="noopener"><img src="img/leftys.jpg" alt="Lefty&#x27;s Coffee Co." width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Lefty&#x27;s Coffee Co.<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Coffee and snacks.</span></span></a>
+</div>
+<div class="entry" id="queen">
+<a class="spot" href="https://queencupcoffee.com/" target="_blank" rel="noopener"><img src="img/queen.jpg" alt="Queen Cup Coffee" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Queen Cup Coffee<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A coffee trailer.</span></span></a>
+</div>
+<div class="entry" id="roblar">
+<a class="spot" href="https://roblarwinery.com/" target="_blank" rel="noopener"><img src="img/roblar.jpg" alt="Roblar Winery" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Roblar Winery<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Lunch and wine, on Roblar Avenue.</span></span></a>
+</div>
+<div class="entry" id="nella">
+<a class="spot" href="https://nellakitchen.com/" target="_blank" rel="noopener"><img src="img/nella.jpg" alt="Nella" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Nella<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">At the Fess Parker Wine Country Inn.</span></span></a>
+</div>
+<div class="entry" id="barlecote">
+<a class="spot" href="https://www.barlecote.com/" target="_blank" rel="noopener"><img src="img/barlecote.jpg" alt="Bar Le Côte" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Bar Le Côte<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Seafood.</span></span></a>
+</div>
+<div class="entry" id="matteis">
+<a class="spot" href="https://auberge.com/matteis-tavern" target="_blank" rel="noopener"><img src="img/matteis.jpg" alt="Mattei&#x27;s Tavern" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Mattei&#x27;s Tavern<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">California cooking.</span></span></a>
+</div>
+<div class="entry" id="weds">
+<a class="spot" href="https://auberge.com/matteis-tavern/dine/weekly-specials/" target="_blank" rel="noopener"><img src="img/weds.jpg" alt="Mattei&#x27;s Tavern Winemaker Wednesday" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Mattei&#x27;s Tavern Winemaker Wednesday<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A Wednesday winemaker night at the tavern.</span></span></a>
+</div>
+<div class="entry" id="locafe">
+<a class="spot" href="https://www.losolivoscafe.com/" target="_blank" rel="noopener"><img src="img/locafe.jpg" alt="Los Olivos Café" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Los Olivos Café<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">California cooking.</span></span></a>
+</div>
+<div class="entry" id="luckypenny">
+<a class="spot" href="https://www.luckypennysb.com/" target="_blank" rel="noopener"><img src="img/luckypenny.jpg" alt="Lucky Penny" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Lucky Penny<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Casual pizza.</span></span></a>
+</div>
+<div class="entry" id="figlo">
+<a class="spot" href="https://www.figmtnbrew.com/losolivos" target="_blank" rel="noopener"><img src="img/figlo.jpg" alt="Figueroa Mountain Brewing Co." width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Figueroa Mountain Brewing Co.<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Beer.</span></span></a>
+</div>
+<div class="entry" id="otherroom">
+<a class="spot" href="https://www.theotherroomlosolivos.com/" target="_blank" rel="noopener"><img src="img/otherroom.jpg" alt="The Other Room" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">The Other Room<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A beer bar.</span></span></a>
+</div>
+<div class="entry" id="lovers">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Lovers%20Loop%20trail%20Figueroa%20Mountain%20Santa%20Barbara%20County" target="_blank" rel="noopener"><img src="img/lovers.jpg" alt="Lovers Loop" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Lovers Loop<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A hike on Figueroa Mountain.</span></span></a>
+</div>
+<div class="entry" id="pumacasu">
+<a class="spot" href="https://www.pumacasu.com/" target="_blank" rel="noopener"><img src="img/pumacasu.jpg" alt="Pumacasu" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Pumacasu<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Antique corkscrews and jewelry.</span></span></a>
+</div>
+<div class="entry" id="outfitters">
+<a class="spot" href="https://www.instagram.com/losolivosoutfitters/" target="_blank" rel="noopener"><img src="img/outfitters.jpg" alt="Los Olivos Outfitters" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Los Olivos Outfitters<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Josh Hartley's shop for menswear, sunglasses, and art. A must visit at 2353 Hollister Street.</span></span></a>
+</div>
+<div class="entry" id="feral">
+<a class="spot" href="https://www.feralfuture.com/pages/feral-foods" target="_blank" rel="noopener"><img src="img/feral.jpg" alt="Feral Foods" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Feral Foods<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Pantry foods sold through local stores.</span></span></a>
+</div>
+<div class="entry" id="rides-bw">
+<a class="spot" href="https://www.buttonwoodwinery.com/trail-rides" target="_blank" rel="noopener"><img src="img/rides-bw.jpg" alt="Buttonwood trail rides" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Buttonwood trail rides<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Horseback rides through the vineyard.</span></span></a>
+</div>
+<div class="entry" id="vaqueros">
+<a class="spot" href="https://www.vinovaqueros.com/" target="_blank" rel="noopener"><img src="img/vaqueros.jpg" alt="Vino Vaqueros" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Vino Vaqueros<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Guided horseback rides.</span></span></a>
+</div><h3 class="sub">Recommended wineries</h3><div class="entry" id="strange">
+<a class="spot" href="https://strangefamilywines.com/visit/" target="_blank" rel="noopener"><img src="img/strange.jpg" alt="Strange Family Wines" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Strange Family Wines<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Sparkling wine, and caviar.</span></span></a>
+</div>
+<div class="entry" id="horizon">
+<a class="spot" href="https://horizon-cellars.obtainwine.com/contact" target="_blank" rel="noopener"><img src="img/horizon.jpg" alt="Horizon Cellars" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Horizon Cellars<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The tasting room on Grand Avenue, open Thursday to Monday.</span></span></a>
+</div>
+<div class="entry" id="beckmen">
+<a class="spot" href="https://beckmenvineyards.com/" target="_blank" rel="noopener"><img src="img/beckmen.jpg" alt="Beckmen Vineyards" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Beckmen Vineyards<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">An estate tasting room.</span></span></a>
+</div>
+<div class="entry" id="buttonwood">
+<a class="spot" href="https://www.buttonwoodwinery.com/" target="_blank" rel="noopener"><img src="img/buttonwood.jpg" alt="Buttonwood Farm &amp; Vineyard" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Buttonwood Farm &amp; Vineyard<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">On Alamo Pintado Road.</span></span></a>
+</div>
+<div class="entry" id="terre">
+<a class="spot" href="https://www.terreetsang.com/" target="_blank" rel="noopener"><img src="img/terre.jpg" alt="Terre et Sang" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Terre et Sang<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Small lot Syrah and Grenache.</span></span></a>
+</div>
+<div class="entry" id="dragonette-lo">
+<a class="spot" href="https://dragonettecellars.com/visit-us/" target="_blank" rel="noopener"><img src="img/dragonette-lo.jpg" alt="Dragonette Cellars" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Dragonette Cellars<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The tasting room in town.</span></span></a>
+</div>
+<div class="entry" id="story">
+<a class="spot" href="https://storyofsoilwine.com/" target="_blank" rel="noopener"><img src="img/story.jpg" alt="Story of Soil" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Story of Soil<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A tasting room in town.</span></span></a>
+</div>
+<div class="entry" id="storm">
+<a class="spot" href="https://www.stormwines.com/" target="_blank" rel="noopener"><img src="img/storm.jpg" alt="Storm Wines" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Storm Wines<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">On San Marcos Avenue.</span></span></a>
+</div>
+<div class="entry" id="brewer">
+<a class="spot" href="https://www.bygregbrewer.com/brewer-clifton.html" target="_blank" rel="noopener"><img src="img/brewer.jpg" alt="Brewer-Clifton" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Brewer-Clifton<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A tasting room in town.</span></span></a>
+</div>
+<div class="entry" id="carhartt">
+<a class="spot" href="https://www.carharttfamilywines.com/" target="_blank" rel="noopener"><img src="img/carhartt.jpg" alt="Carhartt Family Wines" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Carhartt Family Wines<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Weekend music, and a place for after hours fun.</span></span></a>
+</div>
+</section><section class="block eve" id="santaynez">
+<div class="divo"><i></i><s></s><i></i></div>
+<div class="head"><h2>Santa Ynez</h2><span class="num">around Sagunto Street</span></div>
+<div class="entry" id="sykitchen">
+<a class="spot" href="https://www.sykitchen.com/" target="_blank" rel="noopener"><img src="img/sykitchen.jpg" alt="SY Kitchen" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">SY Kitchen<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Italian.</span></span></a>
+</div>
+<div class="entry" id="brothers">
+<a class="spot" href="https://www.brothersredbarn.com/" target="_blank" rel="noopener"><img src="img/brothers.jpg" alt="Brothers Restaurant at the Red Barn" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Brothers Restaurant at the Red Barn<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">American cooking and steaks.</span></span></a>
+</div>
+<div class="entry" id="dos">
+<a class="spot" href="https://doscarlitos.com/" target="_blank" rel="noopener"><img src="img/dos.jpg" alt="Dos Carlitos" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Dos Carlitos<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Mexican.</span></span></a>
+</div>
+<div class="entry" id="victor">
+<a class="spot" href="https://www.thevictor.us/" target="_blank" rel="noopener"><img src="img/victor.jpg" alt="The Victor" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">The Victor<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">California cooking.</span></span></a>
+</div>
+<div class="entry" id="pony">
+<a class="spot" href="https://www.ponycocktailskitchen.com/" target="_blank" rel="noopener"><img src="img/pony.jpg" alt="PONY Cocktails + Kitchen" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">PONY Cocktails + Kitchen<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Cocktails and a neighborhood kitchen.</span></span></a>
+</div>
+<div class="entry" id="highway">
+<a class="spot" href="https://www.highwaytacos.com/" target="_blank" rel="noopener"><img src="img/highway.jpg" alt="Tacos" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Highway Tacos<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Tacos.</span></span></a>
+</div>
+<div class="entry" id="maverick">
+<a class="spot" href="https://www.mavericksaloon.com/" target="_blank" rel="noopener"><img src="img/maverick.jpg" alt="Maverick Saloon" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Maverick Saloon<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A dive bar with live music.</span></span></a>
+</div><h3 class="sub">Recommended wineries</h3><div class="entry" id="brave">
+<a class="spot" href="https://www.braveandmaiden.com/" target="_blank" rel="noopener"><img src="img/brave.jpg" alt="Brave &amp; Maiden Estate" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Brave &amp; Maiden Estate<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Appointment required.</span></span></a>
+</div>
+<div class="entry" id="carr">
+<a class="spot" href="https://carrwinery.com/" target="_blank" rel="noopener"><img src="img/carr.jpg" alt="Carr Vineyards &amp; Winery" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Carr Vineyards &amp; Winery<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The Santa Ynez tasting room.</span></span></a>
+</div>
+<div class="entry" id="grassini">
+<a class="spot" href="https://www.grassinifamilyvineyards.com/visit-taste" target="_blank" rel="noopener"><img src="img/grassini.jpg" alt="Grassini Family Vineyards" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Grassini Family Vineyards<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Appointment required at the estate.</span></span></a>
+</div>
+<div class="entry" id="grimm">
+<a class="spot" href="https://www.grimmsbluff.com/" target="_blank" rel="noopener"><img src="img/grimm.jpg" alt="Grimm&#x27;s Bluff" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Grimm&#x27;s Bluff<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Appointment required.</span></span></a>
+</div>
+</section><section class="block drive" id="toward">
+<div class="divo"><i></i><s></s><i></i></div>
+<div class="head"><h2>Toward Santa Barbara</h2><span class="num">Highway 154 and the coast</span></div>
+<div class="entry" id="coldspring">
+<a class="spot" href="https://coldspringtavern.com/" target="_blank" rel="noopener"><img src="img/coldspring.jpg" alt="Cold Spring Tavern" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Cold Spring Tavern<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A tavern on Highway 154.</span></span></a></div>
+<div class="entry" id="lizard">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Lizard%27s%20Mouth%20trail%20West%20Camino%20Cielo%20Santa%20Barbara" target="_blank" rel="noopener"><img src="img/lizard.jpg" alt="Lizard&#x27;s Mouth" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Lizard&#x27;s Mouth<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A short hike off Highway 154.</span></span></a></div>
+<div class="entry" id="arroyo">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Arroyo%20Hondo%20Preserve%20Gaviota%20Coast%20California" target="_blank" rel="noopener"><img src="img/arroyo.jpg" alt="Arroyo Hondo Preserve" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Arroyo Hondo Preserve<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A coast canyon hike. Check open days before you go.</span></span></a>
+</div>
+<div class="entry" id="baron">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Baron%20Ranch%20trailhead%20Gaviota%20Santa%20Barbara%20County" target="_blank" rel="noopener"><img src="img/baron.jpg" alt="Coastal hills" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Baron Ranch<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A coast hike.</span></span></a>
+</div>
+</section>
+<section class="block plan sbwrap" id="santa-barbara">
+  <div class="divo"><i></i><s></s><i></i></div>
+  <div class="head"><h2>Santa Barbara</h2><span class="num">worth the drive</span></div>
+  <p class="kicker">Food, beaches, music, and trails</p>
+</section>
+<section class="block eat" id="sbfood">
+<div class="divo"><i></i><s></s><i></i></div>
+<div class="head"><h2>Food and drink</h2><span class="num">Santa Barbara</span></div>
+<div class="entry" id="caje">
+<a class="spot" href="https://caje.coffee/" target="_blank" rel="noopener"><img src="img/caje.jpg" alt="Cajé" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Cajé<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Coffee and food.</span></span></a>
+</div>
+<div class="entry" id="corazon">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Coraz%C3%B3n%20Comedor%2029%20East%20Victoria%20Street%20Santa%20Barbara" target="_blank" rel="noopener"><img src="img/corazon.jpg" alt="Mexican food" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Corazón Comedor<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Brunch.</span></span></a>
+</div>
+<div class="entry" id="savoy">
+<a class="spot" href="https://thesavoycafe.com/" target="_blank" rel="noopener"><img src="img/savoy.jpg" alt="The Savoy Cafe &amp; Deli" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">The Savoy Cafe &amp; Deli<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A cafe and deli.</span></span></a>
+</div>
+<div class="entry" id="ahjuice">
+<a class="spot" href="https://ahjuice.com/" target="_blank" rel="noopener"><img src="img/ahjuice.jpg" alt="AH Juice" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">AH Juice<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">An organic cafe.</span></span></a>
+</div>
+<div class="entry" id="emptybowl">
+<a class="spot" href="https://emptybowlnoodle.com/" target="_blank" rel="noopener"><img src="img/emptybowl.jpg" alt="Empty Bowl Gourmet Noodle Bar" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Empty Bowl Gourmet Noodle Bar<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Noodles in the Public Market.</span></span></a>
+</div>
+<div class="entry" id="boathouse">
+<a class="spot" href="https://boathousesb.com/" target="_blank" rel="noopener"><img src="img/boathouse.jpg" alt="Ocean sunset" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">The Boathouse at Hendry&#x27;s Beach<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Sunset and dinner at Hendry&#x27;s Beach.</span></span></a>
+</div>
+<div class="entry" id="bouchon">
+<a class="spot" href="https://bouchonsantabarbara.com/" target="_blank" rel="noopener"><img src="img/bouchon.jpg" alt="bouchon" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">bouchon<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">French.</span></span></a>
+</div>
+<div class="entry" id="lark">
+<a class="spot" href="https://www.thelarksb.com/" target="_blank" rel="noopener"><img src="img/lark.jpg" alt="The Lark" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">The Lark<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">California cooking.</span></span></a>
+</div>
+<div class="entry" id="barbareno">
+<a class="spot" href="https://www.barbareno.com/" target="_blank" rel="noopener"><img src="img/barbareno.jpg" alt="Barbareño" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Barbareño<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">California cooking, and steak.</span></span></a>
+</div>
+<div class="entry" id="milkhoney">
+<a class="spot" href="https://milknhoneytapas.com/" target="_blank" rel="noopener"><img src="img/milkhoney.jpg" alt="milk &amp; honey" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">milk &amp; honey<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Spanish tapas.</span></span></a>
+</div>
+<div class="entry" id="zaytoon">
+<a class="spot" href="https://www.zaytoon.com/" target="_blank" rel="noopener"><img src="img/zaytoon.jpg" alt="Zaytoon" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Zaytoon<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Lebanese.</span></span></a>
+</div>
+<div class="entry" id="seoul">
+<a class="spot" href="https://www.seoulmatekitchen.com/" target="_blank" rel="noopener"><img src="img/seoul.jpg" alt="Seoulmate Kitchen" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Seoulmate Kitchen<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Korean.</span></span></a>
+</div>
+<div class="entry" id="lillys">
+<a class="spot" href="https://lillystacos.com/" target="_blank" rel="noopener"><img src="img/lillys.jpg" alt="Tacos" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Lilly&#x27;s Taqueria<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Fast tacos.</span></span></a>
+</div>
+<div class="entry" id="goodlion">
+<a class="spot" href="https://www.goodlioncocktails.com/" target="_blank" rel="noopener"><img src="img/goodlion.jpg" alt="The Good Lion" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">The Good Lion<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Cocktails.</span></span></a>
+</div>
+<div class="entry" id="beau">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=House%20of%20Beau%201129A%20State%20Street%20Santa%20Barbara" target="_blank" rel="noopener"><img src="img/beau.jpg" alt="Wine bar" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">House of Beau<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A wine bar, with music on weekends.</span></span></a>
+</div>
+<div class="entry" id="rodeo">
+<a class="spot" href="https://www.rodeoroom.com/" target="_blank" rel="noopener"><img src="img/rodeo.jpg" alt="Rodeo Room" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Rodeo Room<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Cocktails, a DJ, and food.</span></span></a>
+</div>
+<div class="entry" id="draught">
+<a class="spot" href="https://www.draughtsmenaleworks.com/" target="_blank" rel="noopener"><img src="img/draught.jpg" alt="Draughtsmen Aleworks" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Draughtsmen Aleworks<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Beer.</span></span></a>
+</div>
+<div class="entry" id="figsb">
+<a class="spot" href="https://www.figmtnbrew.com/santabarbara" target="_blank" rel="noopener"><img src="img/figsb.jpg" alt="Figueroa Mountain Brewing Co." width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Figueroa Mountain Brewing Co.<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Beer.</span></span></a>
+</div>
+<div class="entry" id="nightlizard">
+<a class="spot" href="https://nightlizardbrewingcompany.com/" target="_blank" rel="noopener"><img src="img/nightlizard.jpg" alt="Night Lizard Brewing Company" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Night Lizard Brewing Company<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Beer.</span></span></a>
+</div>
+<div class="entry" id="loquita">
+<a class="spot" href="https://www.loquitasb.com/" target="_blank" rel="noopener"><img src="img/loquita.jpg" alt="Spanish tapas" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Loquita<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Spanish cooking.</span></span></a>
+</div>
+<div class="entry" id="convivo">
+<a class="spot" href="https://www.convivorestaurant.com/" target="_blank" rel="noopener"><img src="img/convivo.jpg" alt="Convivo" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Convivo<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Italian cooking.</span></span></a>
+</div>
+<div class="entry" id="brophy">
+<a class="spot" href="https://www.brophybros.com/" target="_blank" rel="noopener"><img src="img/brophy.jpg" alt="Brophy Bros." width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Brophy Bros.<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Seafood on the harbor.</span></span></a>
+</div>
+<div class="entry" id="cadario">
+<a class="spot" href="https://www.cadariorestaurants.com/montecito-dinner" target="_blank" rel="noopener"><img src="img/cadario.jpg" alt="Ca&#x27;Dario" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Ca&#x27;Dario<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Italian, on Coast Village Road.</span></span></a>
+</div>
+<div class="entry" id="stonehouse">
+<a class="spot" href="https://www.stonehouserestaurant.com/" target="_blank" rel="noopener"><img src="img/stonehouse.jpg" alt="Stonehouse at San Ysidro Ranch" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Stonehouse at San Ysidro Ranch<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Dinner at San Ysidro Ranch.</span></span></a>
+</div>
+</section><section class="block day" id="sbbeach">
+<div class="divo"><i></i><s></s><i></i></div>
+<div class="head"><h2>Beaches and sunset</h2><span class="num">Santa Barbara</span></div>
+<div class="entry" id="butterfly">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Butterfly%20Beach%20Montecito%20California" target="_blank" rel="noopener"><img src="img/butterfly.jpg" alt="Butterfly Beach" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Butterfly Beach<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A beach in Montecito.</span></span></a></div>
+<div class="entry" id="hendrys">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Hendry%27s%20Beach%20Arroyo%20Burro%20Santa%20Barbara" target="_blank" rel="noopener"><img src="img/hendrys.jpg" alt="Hendry&#x27;s Beach" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Hendry&#x27;s Beach<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A beach for sunset. Also called Arroyo Burro.</span></span></a></div>
+</section><section class="block eve" id="sbmusic">
+<div class="divo"><i></i><s></s><i></i></div>
+<div class="head"><h2>Music</h2><span class="num">Santa Barbara</span></div>
+<div class="entry" id="grand">
+<a class="spot" href="https://www.thegrandonstate.com/" target="_blank" rel="noopener"><img src="img/grand.jpg" alt="The Grand On State" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">The Grand On State<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Live music.</span></span></a>
+</div>
+<div class="entry" id="redpiano">
+<a class="spot" href="https://theredpiano.com/" target="_blank" rel="noopener"><img src="img/redpiano.jpg" alt="The Red Piano" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">The Red Piano<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A piano bar.</span></span></a>
+</div>
+<div class="entry" id="soho">
+<a class="spot" href="https://sohosb.com/" target="_blank" rel="noopener"><img src="img/soho.jpg" alt="Live music" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">SOhO<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A music club.</span></span></a>
+</div>
+<div class="entry" id="beau-music">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=House%20of%20Beau%201129A%20State%20Street%20Santa%20Barbara" target="_blank" rel="noopener"><img src="img/beau-music.jpg" alt="Live music" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">House of Beau<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Music on weekends.</span></span></a>
+</div>
+<div class="entry" id="newvic">
+<a class="spot" href="https://etcsb.org/" target="_blank" rel="noopener"><img src="img/newvic.jpg" alt="Theater seats" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">The New Vic<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Theater.</span></span></a>
+</div>
+<div class="entry" id="lobero">
+<a class="spot" href="https://www.lobero.org/" target="_blank" rel="noopener"><img src="img/lobero.jpg" alt="Lobero Theatre" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Lobero Theatre<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Theater.</span></span></a></div>
+<div class="entry" id="granada">
+<a class="spot" href="https://www.granadasb.org/" target="_blank" rel="noopener"><img src="img/granada.jpg" alt="Granada Theatre" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Granada Theatre<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Theater.</span></span></a></div>
+<div class="entry" id="arlington">
+<a class="spot" href="https://thearlingtontheatre.com/" target="_blank" rel="noopener"><img src="img/arlington.jpg" alt="Arlington Theatre" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Arlington Theatre<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">Movies and concerts.</span></span></a></div>
+</section><section class="block plan" id="sbattr">
+<div class="divo"><i></i><s></s><i></i></div>
+<div class="head"><h2>Attractions</h2><span class="num">Santa Barbara</span></div>
+<div class="entry" id="courthouse">
+<a class="spot" href="https://sbcourthouse.org/" target="_blank" rel="noopener"><img src="img/courthouse.jpg" alt="Santa Barbara County Courthouse" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Santa Barbara County Courthouse<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The county courthouse and its clock tower.</span></span></a></div>
+<div class="entry" id="sbnhm">
+<a class="spot" href="https://www.sbnature.org/" target="_blank" rel="noopener"><img src="img/sbnhm.jpg" alt="Santa Barbara Museum of Natural History" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Santa Barbara Museum of Natural History<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The natural history museum.</span></span></a></div>
+<div class="entry" id="funk">
+<a class="spot" href="https://santabarbaraca.com/explore-and-discover-santa-barbara/neighborhoods-towns/santa-barbara/the-funk-zone/" target="_blank" rel="noopener"><img src="img/funk.jpg" alt="Warehouse street" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">The Funk Zone<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The walkable district between downtown and the water.</span></span></a>
+</div>
+<div class="entry" id="lotus">
+<a class="spot" href="https://www.lotusland.org/" target="_blank" rel="noopener"><img src="img/lotus.jpg" alt="Lotusland" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Lotusland<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A botanical garden in Montecito.</span></span></a></div>
+<div class="entry" id="sbbg">
+<a class="spot" href="https://sbbotanicgarden.org/" target="_blank" rel="noopener"><img src="img/sbbg.jpg" alt="Santa Barbara Botanic Garden" width="480" height="320" loading="lazy" decoding="async"><span class="txt"><span class="nm">Santa Barbara Botanic Garden<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">The botanic garden.</span></span></a>
+</div>
+<div class="entry" id="aloes">
+<a class="spot" href="https://www.aloesinwonderland.com/" target="_blank" rel="noopener"><img src="img/aloes.jpg" alt="Aloes in Wonderland" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Aloes in Wonderland<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A rare plant nursery. Ask ahead for a tour.</span></span></a>
+</div>
+</section><section class="block drive" id="sbhike">
+<div class="divo"><i></i><s></s><i></i></div>
+<div class="head"><h2>Hikes</h2><span class="num">Santa Barbara</span></div>
+<div class="entry" id="seven">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Seven%20Falls%20trail%20Santa%20Barbara" target="_blank" rel="noopener"><img src="img/seven.jpg" alt="Waterfall" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Seven Falls<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A hike.</span></span></a>
+</div>
+<div class="entry" id="hotsprings">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Hot%20Springs%20Canyon%20trail%20Montecito%20Santa%20Barbara" target="_blank" rel="noopener"><img src="img/hotsprings.jpg" alt="Creek canyon" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Hot Springs Canyon<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A hike.</span></span></a>
+</div>
+<div class="entry" id="sanmarcos">
+<a class="spot" href="https://www.sanmarcosfoothills.org/" target="_blank" rel="noopener"><img src="img/sanmarcos.jpg" alt="San Marcos Foothills Preserve" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">San Marcos Foothills Preserve<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A foothill preserve.</span></span></a>
+</div>
+<div class="entry" id="jesusita">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Jesusita%20Trail%20Santa%20Barbara" target="_blank" rel="noopener"><img src="img/jesusita.jpg" alt="Oak woodland trail" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Jesusita<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A hike.</span></span></a>
+</div>
+<div class="entry" id="inspiration">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Inspiration%20Point%20hike%20Santa%20Barbara%20front%20country" target="_blank" rel="noopener"><img src="img/inspiration.jpg" alt="Coastal overlook" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Inspiration Point<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A hike.</span></span></a>
+</div>
+<div class="entry" id="rattle">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=Rattlesnake%20Canyon%20trail%20Santa%20Barbara" target="_blank" rel="noopener"><img src="img/rattle.jpg" alt="Creek crossing" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">Rattlesnake Canyon<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A hike.</span></span></a>
+</div>
+<div class="entry" id="sanysidro">
+<a class="spot" href="https://www.google.com/maps/search/?api=1&amp;query=San%20Ysidro%20Trail%20Montecito" target="_blank" rel="noopener"><img src="img/sanysidro.jpg" alt="Chaparral trail" width="800" height="533" loading="lazy" decoding="async"><span class="txt"><span class="nm">San Ysidro Trail<span class="go" aria-hidden="true">&#8599;</span></span><span class="blurb">A hike.</span></span></a>
+</div>
+</section>
+<section class="subscribe" id="subscribe">
+  <h2>Want to know what's going on this weekend?</h2>
+  <p>Subscribe to the Valley Weekender. Read <a href="../">this week's issue</a>, or the <a href="../issues/">archive of past issues</a>.</p>
+  <p>Free, every Thursday. Unsubscribe anytime from the link in every email.</p>
+  <iframe src="https://thevalleyweekender.substack.com/embed" width="100%" height="150" style="border:none;background:transparent" frameborder="0" scrolling="no" title="Subscribe to The Valley Weekender"></iframe>
+  <p class="alt">Or subscribe at <a href="https://thevalleyweekender.substack.com" target="_blank" rel="noopener">thevalleyweekender.substack.com</a></p>
+</section>
+<img class="land" src="../assets/landscape_w.png" alt="">
+<footer class="foot">
+  <img class="mini" src="../assets/crest_w.png" alt="">
+  <div class="name">Santa Ynez Area <em>Things to Do</em></div>
+  <p>A standing visitor guide, looked over about once a quarter.<br>Each link goes to that place's own page, so check before you go.</p>
+  <div class="brought"><a class="club" href="https://app.notion.com/p/31eb0e79c9378176ba0dd2f8404c4ca6" target="_blank" rel="noopener"><b>The Valley Weekender</b>, brought to you by the <b>Outfitters Men's Club</b></a></div>
+  <a class="join" href="https://app.notion.com/p/31eb0e79c9378176ba0dd2f8404c4ca6" target="_blank" rel="noopener">Learn more or join the <b>Outfitters Men's Club</b> <span aria-hidden="true">&#8599;</span></a>
+  <a class="archive-link" href="../">This week's Weekender</a>
+  <a class="archive-link" href="../issues/" style="margin-left:14px">Past issues</a>
+</footer>
+</main>
+</body></html>

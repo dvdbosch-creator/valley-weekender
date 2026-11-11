@@ -16,6 +16,13 @@ latest = issues[0]['date']
 src = (ROOT / f'issues/{latest}/index.html').read_text()
 front = src.replace('../../', '')
 front = re.sub(r'(src|href)="img/', rf'\1="issues/{latest}/img/', front)
+# Evergreen visitor guide, on the front page only. Issue pages stay weekly.
+needle = '<a class="archive-link" href="issues/">Past issues</a>'
+if 'href="guide/"' not in front and needle in front:
+    front = front.replace(
+        needle,
+        needle + '\n  <a class="archive-link" href="guide/" style="margin-left:14px">Things to do</a>',
+        1)
 (ROOT / 'index.html').write_text(front)
 
 # Past Issues list, rebuilt from issues.json (newest first).
