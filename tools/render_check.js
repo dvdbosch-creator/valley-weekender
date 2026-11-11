@@ -9,6 +9,24 @@ const [url, out = '/tmp/vw-check-390.png'] = process.argv.slice(2);
   await p.setViewport({ width: 390, height: 844, deviceScaleFactor: 2 });
   const r = await p.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
   await p.evaluate(() => document.fonts.ready);
+  // Load lazy images before the broken-image check. A weekly issue has no lazy
+  // images, so this only waits; a long guide needs the scroll.
+  await p.evaluate(async () => {
+    const delay = (ms) => new Promise(r => setTimeout(r, ms));
+    const h = window.innerHeight || 800;
+    for (let y = 0; y < document.body.scrollHeight; y += h) {
+      window.scrollTo(0, y);
+      await delay(30);
+    }
+    window.scrollTo(0, 0);
+    await Promise.all([...document.images].map(img => {
+      if (img.complete) return null;
+      return new Promise(res => {
+        img.addEventListener('load', res, {once: true});
+        img.addEventListener('error', res, {once: true});
+      });
+    }));
+  });
   const s = await p.evaluate(() => ({
     fonts: [...document.fonts].filter(f => f.status === 'loaded').map(f => f.family),
     broken: [...document.images].filter(i => !i.naturalWidth).map(i => i.src),
