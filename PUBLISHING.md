@@ -6,7 +6,7 @@ Every Thursday morning the bot puts out the issue for the coming Friday to Sunda
 
 A new issue always starts as a copy of the most recent issue page:
 
-    issues/<latest date>/index.html        (today: issues/2026-10-30/index.html)
+    issues/<latest date>/index.html        (latest: issues/2026-11-20/index.html)
 
 That file holds the full design (layout, colors, the Fraunces and Inter fonts, the weather strip, the cards and the footer). Keep the markup and class names, and change only the words, links and photos. Do not edit `index.html` at the site root by hand; `tools/publish.py` writes it.
 
