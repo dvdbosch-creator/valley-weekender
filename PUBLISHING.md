@@ -116,3 +116,13 @@ The list will grow by one line a week. After about 12 bullets, the bot may remov
 
 ## Reader-facing rule (Derek, 2026-10-31)
 - Never mention time conflicts or source disagreements in the public issue. Use the venue's own most specific listing, or omit the time and point to the official link.
+
+## Substack post format (Derek, 2026-11-20)
+The Substack body must match the approved format exactly. Follow `/workspace/valley-weekend/substack-reference/TEMPLATE.md` (canonical example: `the-valley-weekender-nov-13-to-15.published.html` in the same folder). Start from that markup and swap in the week's verified content. Do not redesign it, and do not add inline photos.
+
+Pre-publish check (run `python3 /workspace/valley-weekend/substack-reference/check_post.py <Nov 13 reference> <new post.html>`), all required:
+- exactly 1 image (the flyer, at the top)
+- exactly 7 h2s (Top Picks, Evening and Music, Los Olivos Winery Events, Valley Winery Events, Shop Local, Worth the Drive, Plan Ahead)
+- about 600 to 700 words
+- no bare URLs; every link sits on a name
+If the check fails, or the Substack preview doesn't look like the Nov 13 post, save a draft instead of sending and tell Derek.
